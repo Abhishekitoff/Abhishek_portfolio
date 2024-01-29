@@ -1,0 +1,527 @@
+@font-face {
+    font-family: gilroy;
+    src: url(assets/fonts/Gilroy-Medium.e7e7c091\ \(1\).ttf);
+  }
+@font-face {
+    font-family: mizious;
+    src: url(assets/fonts/Mazius-Extraitalic.121a71a7\ \(1\).otf);
+  }
+  @font-face{
+    font-family: head;
+    src: url(assets/fonts/Heading-Now-Variable.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+  
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+}
+
+#loder{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+#loder #topHeading{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 0%);
+    
+}
+
+#topHeading h5{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}
+
+#loder h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+#loder h1 span{
+    font-family: mizious;
+    color: #14CF93;
+}
+
+#green{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0vh;
+    background-color: #14CF93;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+}
+.menu li{
+    list-style: none;
+}
+
+.menu li a{
+   text-decoration: none;
+   font-weight: 300;
+   text-transform: uppercase;
+   color: #fff;
+   font-size: 1vw;
+
+}
+
+.navbar .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 5vw;
+    height: 100px;
+
+}
+
+.menu li a{
+    position: relative;
+
+}
+
+.menu li a span{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: inline-block;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.menu a:hover span{
+    width: 100%;
+}
+
+.home-content{
+    position: absolute;
+    top: 6.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+.home-content h1{
+    font-size: 7rem;
+    color: #fff;   
+}
+
+
+.home-content h1 span{
+    font-family: mizious;
+    color: #14CF93;
+}
+
+#btn button{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 7px;
+    background: #14CF93;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+}
+
+#para{
+    position: absolute;
+    top: 5%;
+    right: 28%;
+    font-weight: 100;
+    color:#B2B2B2;
+
+}
+
+#arrow1 img{
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    background-color: #fff;
+    border-radius: 50%;
+    
+    
+}
+
+#page2{
+    height: 80vh;
+    width: 100%;
+    background-color: #151515;
+    color: #fff;
+    padding: 0 10vw; 
+    display: flex;
+}
+
+#page2 #paraimg {
+    width: 30%;
+    height: auto;
+    
+}
+#paraimg h2{
+    font-weight: 600;
+    font-size: 2vw;
+}
+#paraimg h2 span{
+    font-family: mizious;
+    color: #14CF93;
+    font-weight: 100;
+}
+
+#rightimg {
+  opacity: 0;
+    width: 60%;
+    /* background: yellow; */
+    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#rightimg .imgcont{
+
+   position: absolute;
+   border-radius: 1vw;
+    width: 20vw;
+    height: 30vw;
+    background-color: red;
+    top: -10%;
+    filter: grayscale();
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+#rightimg .imgcont:hover{
+    filter: grayscale(0);
+   
+}
+
+#rightimg .imgcont:nth-child(1){
+    transform: translate(-19%,-5%) rotate(-13deg);
+    background-color: red;
+    background-image: url("assets/img/3.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+#rightimg .imgcont:nth-child(2){
+   transform:  translate(3%,3%) rotate(-12deg);
+    background-color: yellow;
+    background-image: url("assets/img/4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#rightimg .imgcont:nth-child(3){
+    transform: translate(30%,13%) rotate(-11deg);
+    background-image: url("assets/img/2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    background-color: green;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    overflow: hidden;
+}
+
+
+
+#page3 h1{
+    color: #fff;
+    font-size: 35vw;
+    text-transform: uppercase;
+    font-family: head;
+    white-space: nowrap;
+    font-stretch: 260%;
+} 
+
+#page4{
+    height: 100%;
+    width: 100%;
+    background: #151515;
+}
+#page4 #heading{
+    padding: 50px 80px;
+}
+
+#page4 #heading h1{
+    font-size: 7vw;
+    text-transform: capitalize;
+    color: #fff;
+}
+#page4 #heading h1 span{
+   font-family: mizious;
+   color: #14CF93;
+}
+
+#page4-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#page4-cards #card1{
+    height: 600px;
+    width: 45%;
+    /* background-color: red; */
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+#page4-cards #card1 img{
+    object-fit: cover;
+     height: 100%;
+    width: 100%;
+}
+
+#page4-cards #card2{
+    margin-top: 10%;
+    height: 400px;
+    width: 30%;
+    /* background-color: green; */
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+#page4-cards #card2 img{
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
+}
+
+
+#page4-cards #card3{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    height: 600px;
+    width: 45%;
+    /* background-color: green; */
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+#page4-cards #card3 img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+   
+}
+
+#page4-cards #card1 button, #card3 button{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    padding: 30px 80px;
+    border: none;
+    border-radius: 50px;
+}
+
+#page4-cards #card2 button{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    padding: 30px 80px;
+    border: none;
+    border-radius: 50px;
+}
+
+#page4-cards #card2 .btn4{
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    padding: 30px 60px;
+    border: none;
+    border-radius: 50px;
+}
+
+
+#page4-cards #card1 .btn2, #card3 .btn6{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    padding: 30px 50px;
+    border: none;
+    border-radius: 50px;
+}
+
+#page5{
+    height: 100vh;
+    background-color: #151515;
+    padding: 40px 70px;
+    color: #fff;
+}
+
+#page5 #socials{
+    padding: 30px 0;
+}
+
+#page5 #socials h1{
+    font-size: 10vh;
+    text-transform: capitalize;
+    color: #fff;
+}
+#page5 #socials h1 span{
+    color: #14CF93;
+    font-family: mizious;
+}
+
+#page5 #socials .hover{
+    position: absolute;
+    height: 150px;
+    opacity: 0;
+    transition: all ease-in;
+    
+}
+
+#page5 #socials #twitter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 20vh;
+   width: 100%;
+   padding: 0 50px;
+   /* background-color: red; */
+   
+
+}
+#page5 #socials #twitter #tw1{
+ height: 90%;
+ border-radius: 50%;
+
+}
+
+#page5 #socials #linkdin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 20vh;
+   width: 100%;
+   padding: 0 50px;
+   /* background-color: red; */
+
+}
+#page5 #socials #linkdin #li1{
+ height: 90%;
+ border-radius: 50%;
+
+}
+
+#page5 #socials #discord{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 20vh;
+   width: 100%;
+   padding: 0 50px;
+   /* background-color: red; */
+
+}
+#page5 #socials #discord #di1{
+ height: 90%;
+ border-radius: 50%;
+
+}
+
+#page5 #socials #linkdin{
+   height: 20vh;
+   width: 100%;
+   /* background-color: green; */
+   border-bottom: 2px solid #B2B2B2;
+   border-top: 2px solid #B2B2B2;
+
+}
+
+
+
+#page5 #socials #discord{
+   height: 20vh;
+   width: 100%;
+   /* background-color: red; */
+   border-bottom: 2px solid #B2B2B2;
+}
+
+#page6 {
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+}
+
+#page6 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0.7);
+    
+}
+
+#page6-head{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#page6-head h1{
+    font-size: 10vh;
+    text-align: center;
+    color: #fff;
+}
+
+#page6-btn{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    
+}
+
+#page6-btn button{
+    padding: 20px 200px;
+    text-wrap: nowrap;
+    text-transform: capitalize;
+    font-size: 2vw;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: none;
+}
