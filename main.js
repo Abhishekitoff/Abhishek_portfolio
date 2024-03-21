@@ -198,3 +198,6 @@ gsap.from("#page6-head h1, #page6-btn button",{
 })
 
 
+let card = document.querySelectorAll(".page4Card")
+
+
